@@ -1,0 +1,14 @@
+FROM XX
+
+TEMPLATE """<start_of_turn>user
+{{ if .System }}{{ .System }} {{ end }}{{ .Prompt }}<end_of_turn>
+<start_of_turn>model
+{{ .Response }}<end_of_turn>"""
+
+PARAMETERS penalize_newline false
+PARAMETERS repeat_penalty 1
+PARAMETERS stop "<start_of_turn>"
+PARAMETERS stop "<end_of_turn>"
+PARAMETERS temperature 0
+PARAMETERS num_ctx 4096
+PARAMETERS num_predict 1024
