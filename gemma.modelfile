@@ -5,10 +5,10 @@ TEMPLATE """<start_of_turn>user
 <start_of_turn>model
 {{ .Response }}<end_of_turn>"""
 
-PARAMETERS penalize_newline false
-PARAMETERS repeat_penalty 1
-PARAMETERS stop "<start_of_turn>"
-PARAMETERS stop "<end_of_turn>"
-PARAMETERS temperature 0
-PARAMETERS num_ctx 4096
-PARAMETERS num_predict 1024
+PARAMETER penalize_newline false
+PARAMETER repeat_penalty 1
+PARAMETER stop "<start_of_turn>"
+PARAMETER stop "<end_of_turn>"
+PARAMETER temperature 0
+PARAMETER num_ctx 4096
+PARAMETER num_predict 1024
