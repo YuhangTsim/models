@@ -1,0 +1,2 @@
+gemma-3-4b-it-Q4_K_M-00001-of-00002.gguf filter=lfs diff=lfs merge=lfs -text
+gemma-3-4b-it-Q4_K_M-00002-of-00002.gguf filter=lfs diff=lfs merge=lfs -text
